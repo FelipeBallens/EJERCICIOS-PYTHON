@@ -1,5 +1,5 @@
 #coordenadas rectangulares a cilíndricas y esféricas
-
+## descripcion
 import numpy as np
 
 def cartesiana_a_cilindrica(x, y, z):
@@ -14,7 +14,7 @@ def cartesiana_a_esferica(x, y, z):
     phi = np.arccos(z / r)         # Ángulo respecto al eje Z, ángulo azimutal (en radianes)
     return r, theta, phi
 
-# Coordenadas rectangulares
+# Coordenadas rectangulares 
 print("\nCoordenadas rectangulares:\n")
 x = float(-1)
 y = float(1)

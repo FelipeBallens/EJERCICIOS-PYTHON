@@ -1,5 +1,5 @@
 #Logos de marcas de carros
-
+## descripcion
 import cv2
 
 def cargar_imagen(ruta):
@@ -35,8 +35,8 @@ def imprimir_coordenadas(contornos, nombre_logo):
 
 def main():
     # Cargar las imágenes
-    maserati_logo = cargar_imagen(r'C:\Users\Usuario\OneDrive\Escritorio\ImagenesLogos\maserati.jpg')
-    peugeot_logo = cargar_imagen(r'C:\Users\Usuario\OneDrive\Escritorio\ImagenesLogos\peugeot.jpg')
+    maserati_logo = cargar_imagen(r'C:\Users\Usuario\OneDrive\Escritorio\EJERCICIOS PYTHON\ImagenesLogos\maserati.jpg')
+    peugeot_logo = cargar_imagen(r'C:\Users\Usuario\OneDrive\Escritorio\EJERCICIOS PYTHON\ImagenesLogos\peugeot.jpg')
 
     # Reducir el tamaño de las imágenes
     maserati_logo = reducir_tamaño(maserati_logo)

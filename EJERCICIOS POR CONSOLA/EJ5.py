@@ -1,4 +1,4 @@
-print("EJERCICIO 5. ELECCION DESEA CONTINUAR: \n")
+print("EJERCICIO 5. ELECCION DESEA CONTINUAR: \n") ## descripcion
 i = 0
 while i == 0:
     Eleccion = input("¿Desea continuar Si/No?: ")

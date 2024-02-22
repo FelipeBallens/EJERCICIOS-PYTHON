@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+## descripcion
 #Determina el tipo de sistema según el valor de zita
 def tipo_sistema(zeta):
     if zeta < 1:

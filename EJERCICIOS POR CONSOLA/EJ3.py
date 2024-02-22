@@ -18,7 +18,7 @@ if Eleccion==1:
     Altura = float(input("\nDigite el valor de la altura del prisma: "))
     Vprisma = Base * Altura 
     print("\nEl volumen del prisma es: ", Vprisma)
-    print("\n****************************************************************\n")
+    print("\n****************************************************************\n") ## descripcion
 
 elif Eleccion==2:
     print("\n****************************************************************")

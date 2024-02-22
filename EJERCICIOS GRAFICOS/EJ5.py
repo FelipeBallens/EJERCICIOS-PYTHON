@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 #FUNCION PARA GRAFICAR LETRA
+## descripcion
 def plot_letter(segments):
     for segment in segments:
         x, y = zip(*segment)

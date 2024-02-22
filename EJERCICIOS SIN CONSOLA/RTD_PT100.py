@@ -1,5 +1,5 @@
 #Cálculo de resistencia de una RTD PT100 en función de la temperatura
-
+## descripcion
 def resistencia_PT100(temperatura):
     # Coeficientes de la ecuación de Callendar-Van Dusen
     A = 3.9083e-3

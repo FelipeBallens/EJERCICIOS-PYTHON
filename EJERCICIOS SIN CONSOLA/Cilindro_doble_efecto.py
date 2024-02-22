@@ -1,6 +1,6 @@
 import math
 
-#Fuerza de avance
+#Fuerza de avance ## descripcion
 def f_de_avance(presion, diametro_piston):
     area = (diametro_piston / 2) ** 2 * math.pi     # Área del pistón (A = π * r^2)
     fuerza = presion * area                         # Fuerza = Presión * Área

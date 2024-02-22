@@ -1,6 +1,6 @@
 import random
 
-print("EJERCICIO 2. NUMEROS ALEATORIOS EN UN RANGO: \n")
+print("EJERCICIO 2. NUMEROS ALEATORIOS EN UN RANGO: \n") ## descripcion
 # SOLICITA INFORMACION AL USUARIO
 maximo = input("Digite el Maximo del rango: ")
 minimo = input("Digite el Minimo del rango: ")

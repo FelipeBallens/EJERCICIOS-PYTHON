@@ -1,5 +1,5 @@
 #Carga y descarga de un condensador en un circuito RC
-
+## descripcion
 import numpy as np
 import matplotlib.pyplot as plt
 

@@ -1,5 +1,5 @@
 import numpy as np
-
+## descripcion
 #Función para realizar una rotación en el eje X.
 
 def rotacion_x(angulo):
