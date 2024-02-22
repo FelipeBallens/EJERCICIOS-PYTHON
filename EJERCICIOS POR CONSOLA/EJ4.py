@@ -1,4 +1,4 @@
-print("EJERCICIO 4. ELECCION ROBOTS Y ARTICULACIONES: \n") ## descripcion
+print("EJERCICIO 4. ELECCION ROBOTS Y ARTICULACIONES: \n") ## descripcio
 # MENU ELECCION ROBOTS
 print("\t\t\t\t**************")
 print("\t\t\t\t*** ROBOTS ***")
