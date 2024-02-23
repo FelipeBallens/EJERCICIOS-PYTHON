@@ -1,10 +1,10 @@
 print("EJERCICIO 5. ELECCION DESEA CONTINUAR: \n") ## descripcion
 i = 0
 while i == 0:
-    Eleccion = input("¿Desea continuar Si/No?: ")
-    if Eleccion == "Si":
+    Eleccion = input("¿Desea continuar Si/No?: ").lower()
+    if Eleccion == "si":
         i = 0
-    elif Eleccion == "No": 
+    elif Eleccion == "no": 
         i = 1
 
 

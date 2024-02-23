@@ -52,4 +52,5 @@ mostrar_matriz(matriz_rotacion_y)
 # Rotación en el eje Z
 matriz_rotacion_z = rotacion_z(angulo)
 print("\nMatriz de rotación en el eje Z:")
+print(matriz_rotacion_z)
 mostrar_matriz(matriz_rotacion_z)
