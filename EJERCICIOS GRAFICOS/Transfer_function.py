@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-## descripcion
-#Determina el tipo de sistema según el valor de zita
+from scipy import signal
+
+# Determina el tipo de sistema según el valor de zeta
 def tipo_sistema(zeta):
     if zeta < 1:
         return 'Subamortiguado'
@@ -9,19 +10,6 @@ def tipo_sistema(zeta):
         return 'Críticamente amortiguado'
     else:
         return 'Sobreamortiguado'
-
-#Calcula la respuesta de una función de transferencia de segundo orden.
-def funcion_transferencia_segundo_orden(coeficientes, tiempo):
-    K, wn, zeta = coeficientes
-    if zeta < 1:
-        wd = wn * np.sqrt(1 - zeta**2)
-        salida = K * (1 - np.exp(-zeta * wn * tiempo) * (np.cos(wd * tiempo) + (zeta / np.sqrt(1 - zeta**2)) * np.sin(wd * tiempo)))
-    elif zeta == 1:
-        salida = K * (1 - np.exp(-wn * tiempo) * (1 + wn * tiempo))
-    else:
-        wd = wn * np.sqrt(zeta**2 - 1)
-        salida = K * (1 - (1 / (2 * zeta * np.sqrt(zeta**2 - 1))) * np.exp(-zeta * wn * tiempo) * (np.exp(wd * tiempo) - np.exp(-wd * tiempo)))
-    return salida
 
 # Coeficientes de la función de transferencia (K, wn, zeta)
 K = float(input("Ingrese el coeficiente K: "))
@@ -32,11 +20,13 @@ zeta = float(input("Ingrese la razón de amortiguamiento zeta: "))
 tipo = tipo_sistema(zeta)
 print("\nTipo de sistema:", tipo)
 
-# Tiempo de respuesta
-tiempo = np.linspace(0, 10, 1000)
+# Crear la función de transferencia de segundo orden
+num = [K * wn**2]
+den = [1, 2 * zeta * wn, wn**2]
+sys = signal.TransferFunction(num, den)
 
-# Respuesta de la función de transferencia
-respuesta = funcion_transferencia_segundo_orden([K, wn, zeta], tiempo)
+# Tiempo de respuesta
+tiempo, respuesta = signal.step(sys)
 
 # Gráfico
 plt.figure(figsize=(10, 6))
